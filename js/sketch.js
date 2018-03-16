@@ -1,42 +1,59 @@
 
-var num = 2000;
-var range = 10;
 
-var ax = [];
-var ay = [];
-var strokeColor = 204.0;
+//Position Variables
+var x = 100;
+var y = 100;
+
+// Speed - Velocity
+var vx = 2000;
+var vy = 2000;
+
+// Acceleration
+var ax = 1000;
+var ay = 1000;
+
+var vMultiplier = 0.007;
+var bMultiplier = 0.6;
 
 function setup() {
   var canvas = createCanvas(innerWidth, innerHeight);
   canvas.parent('backgroundAnimation')
-  for ( var i = 0; i < num; i++ ) {
-    ax[i] = width / 2;
-    ay[i] = height / 2;
-  }
-  frameRate(120);
+
+    fill(0);
 }
 
 function draw() {
-  background(255,255,255,0.1);
+    background(255);
+    ballMove();
+    ellipse(x, y, 30, 30);
+}
 
-  // Shift all elements 1 place to the left
-  for ( var i = 1; i < num; i++ ) {
-    ax[i - 1] = ax[i];
-    ay[i - 1] = ay[i];
-  }
+function ballMove() {
 
-  // Put a new value at the end of the array
-  ax[num - 1] += random(-range, range);
-  ay[num - 1] += random(-range, range);
+	ax = accelerationX;
+	ay = accelerationY;
 
-  // Constrain all points to the screen
-  ax[num - 1] = constrain(ax[num - 1], 0, width);
-  ay[num - 1] = constrain(ay[num - 1], 0, height);
+	vx = vx + ay;
+	vy = vy + ax;
+	y = y + vy * vMultiplier;
+	x = x + vx * vMultiplier;
 
-  // Draw a line connecting the points
-  for ( var j = 1; j < num; j++ ) {
-    var val = j / num * strokeColor+ 51;
-    stroke(val);
-    line(ax[j - 1], ay[j - 1], ax[j], ay[j]);
-  }
+	// Bounce when touch the edge of the canvas
+	if (x < 0) {
+		x = 0;
+		vx = -vx * bMultiplier;
+	}
+ 	if (y < 0) {
+ 		y = 0;
+ 		vy = -vy * bMultiplier;
+ 	}
+ 	if (x > width - 20) {
+ 		x = width - 20;
+ 		vx = -vx * bMultiplier;
+ 	}
+ 	if (y > height - 20) {
+ 		y = height - 20;
+ 		vy = -vy * bMultiplier;
+ 	}
+
 }

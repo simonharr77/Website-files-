@@ -36,7 +36,9 @@ h1, h2, h3, h4, h5, h6{
   z-index: -1;
   top:0;
   left:0;
-
+  margin-top: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #backgroundAnimation{
@@ -53,22 +55,6 @@ h1, h2, h3, h4, h5, h6{
   width: 100%;
 }
 
-#welcomeArea h1{
-font-size: 10rem;
-}
-#welcomeArea h1::selection{
-background-color: #ccc;
-color:#abc;
-}
-
-#aboutMeArea{
-
-  background-color:#ccc;
-}
-
-#myWorkArea{
-  min-height: 400;
-}
 footer{
   background-color: #ccc;
   min-height: 400px;
