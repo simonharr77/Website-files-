@@ -5,7 +5,7 @@ body,html{
 
 body{
   font-family: 'Orbitron', sans-serif;
-  background-image: url('../assets/img/rockywall.png');
+  background-color: rgba(0,0,0,0.4);
 
   background-attachment: fixed;
   font-size: 12px;
@@ -18,7 +18,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .navbar{
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.8);
+  color:black;
+
 }
 
 .aboutUsSection{
@@ -27,7 +29,9 @@ h1, h2, h3, h4, h5, h6{
 
 
 .hvr-bob{
-  color: black;
+  color: #ccc;
+
+
 }
 
 .aboutMeContainer{
@@ -41,9 +45,18 @@ header{
     width: 100%;
 }
 
-.imgPlaceHolder{
-  height: 200px;
-  background-color: #000;
+.responsive{
+
+
+      background-image: url('../assets/img/water.JPG');
+      height: 150px;
+      width: 100%;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: 40% 40%;
+
+
+
 }
 
 #AboutMe{
