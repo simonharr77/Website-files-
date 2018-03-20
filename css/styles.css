@@ -8,13 +8,25 @@ body{
   background-color: rgba(0,0,0,0.4);
 
   background-attachment: fixed;
-  font-size: 12px;
+  font-size: 25px;
   color: black;
 
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5{
   font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+}
+
+
+h6{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+}
+.navbar-brand{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+
 }
 
 .navbar{
