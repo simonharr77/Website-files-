@@ -42,12 +42,12 @@ function draw(){
     console.log("change");
     if (getMenuSelection == 1){
       spotID == 1322;
-      loadJSON ("http://magicseaweed.com/api/64fe6ea46cffc94ae0a802b17d832833/forecast/?spot_id=1322&fields=swell.absMinBreakingHeight",getData, 'jsonp');
+      loadJSON ("https://magicseaweed.com/api/64fe6ea46cffc94ae0a802b17d832833/forecast/?spot_id=1322&fields=swell.absMinBreakingHeight",getData, 'jsonp');
       //console.log(1000);
     }
     if (getMenuSelection == 2){
       spotID == 10;
-      loadJSON ("http://magicseaweed.com/api/64fe6ea46cffc94ae0a802b17d832833/forecast/?spot_id=10&fields=swell.absMinBreakingHeight",getData, 'jsonp');
+      loadJSON ("https://magicseaweed.com/api/64fe6ea46cffc94ae0a802b17d832833/forecast/?spot_id=10&fields=swell.absMinBreakingHeight",getData, 'jsonp');
       //console.log(2000);
     }
     getMenuSelectionCheck = getMenuSelection;
