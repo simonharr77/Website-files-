@@ -29,7 +29,7 @@ function setup(){
 }
 //function for calling the API
 function runJSON(){
-  loadJSON ("http://magicseaweed.com/api/64fe6ea46cffc94ae0a802b17d832833/forecast/?spot_id="+spotID+"&fields=swell.absMinBreakingHeight",getData, 'jsonp');
+  loadJSON ("https://magicseaweed.com/api/64fe6ea46cffc94ae0a802b17d832833/forecast/?spot_id="+spotID+"&fields=swell.absMinBreakingHeight",getData, 'jsonp');
 }
 
 function draw(){
@@ -74,7 +74,7 @@ function draw(){
     // Set the vertex
   vertex(x, y);
   //  curveVertex(x,y)
-  
+
     // Increment x dimension for noise
     xoff += 0.2;
   }
