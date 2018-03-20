@@ -17,7 +17,8 @@ function getData(data) {
 
 function setup(){
   //console.log("Set Up Runs");
-  createCanvas(1280, 720);
+  var canvas = createCanvas(640, 360);
+  canvas.parent('surfContainer');
 
   runJSON();
 
