@@ -26,6 +26,7 @@ h6{
 .navbar-brand{
   font-family: 'Orbitron', sans-serif;
   font-size: 25px;
+  color: #ccc;
 
 }
 
@@ -36,10 +37,6 @@ h6{
 
 }
 
-.aboutUsSection{
-  background-color: #ccc;
-}
-
 
 .hvr-bob{
   color: #ccc;
@@ -47,9 +44,6 @@ h6{
 
 }
 
-.aboutMeContainer{
-  height: 1000px;
-}
 
 header{
     position: fixed;
@@ -72,10 +66,14 @@ header{
 
 
 #AboutMe{
-  margin-top: 350px;
+  margin-top: 300px;
+  margin-bottom: 30px;
 
 }
+#pagetop{
+  margin-top: 300px;
 
+}
 /*
 #backgroundContainer{
   position: fixed;
