@@ -5,10 +5,6 @@ function aboutScroll(){
   console.log('hello');
 };
 function projectsScroll(){
-  $(window).scrollTo("#Projects", 800, {offset : 350});
-  console.log('hello');
-};
-function projectsScroll(){
-  $(window).scrollTo("#Projects", 800, {offset : 350});
+  $(window).scrollTo("#Projects", 800, {offset : -250});
   console.log('hello');
 };

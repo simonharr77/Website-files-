@@ -19,8 +19,8 @@
       <div class="responsive navbar-expand-lg">
       </div>
       <nav class="navbar navbar-expand-lg navbar-dark text-uppercase">
-        <a class="navbar-brand hvr-bob" href="#pagetop">Simon Harrington</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-grey rounded" data-toggle="collapse" data-target="#mobileMenu">
+        <a class="navbar-brand hvr-bob" onclick="aboutScroll()" >Simon Harrington</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase rounded" data-toggle="collapse" data-target="#mobileMenu">
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="mobileMenu">
@@ -80,20 +80,28 @@
     <h2 class="text-center pt-5">Contact Me</h2>
     <hr class="mb-5">
       <form action="https://formspree.io/simonharr77@outlook.com" method="POST">
-        <div class="form-group">
-          <input class="form-control" id="name" type="text" placeholder="Name" required="required">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <input class="form-control" id="name" type="text" placeholder="Name" required="required">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required">
+            </div>
+          </div>
         </div>
         <div class="form-group">
-            <input class="form-control" id="email" type="email" placeholder="Email Address" required="required">
+          <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required"></textarea>
         </div>
         <div class="form-group">
-            <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required">
-        </div>
-        <div class="form-group">
-            <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required"></textarea>
-        </div>
-        <div class="form-group">
-          <button class="btn btn-primay w-100" type="submit">Send</button>
+          <button class="btn w-100" type="submit">Send</button>
         </div>
       </form>
     </div>
