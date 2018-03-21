@@ -107,7 +107,11 @@ header{
   margin-bottom: 60px;
 }
 #SurfReport{
+  margin-top: 25px;
   color: black;
+}
+#Arrow{
+  margin-top: 25px;
 }
 /*
 #backgroundContainer{
@@ -183,4 +187,54 @@ footer{
 
 .bodyContent{
   margin-top: 350px;
+}
+/*arrow animation*/
+#arrowAnim {
+
+  width: 6vw;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  width: 3vw;
+  height: 3vw;
+  border: 1.5vw solid;
+  border-color: grey transparent transparent grey;
+  transform: rotate(-45deg);
+}
+
+
+.arrowSliding {
+  position: absolute;
+  -webkit-animation: slide 4s linear infinite;
+          animation: slide 4s linear infinite;
+}
+
+.delay1 {
+  -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.delay2 {
+  -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+.delay3 {
+  -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+    0% { opacity:0; transform: translateX(10vw); }
+   20% { opacity:1; transform: translateX(4vw); }
+   80% { opacity:1; transform: translateX(-4vw); }
+  100% { opacity:0; transform: translateX(-10vw); }
+}
+@keyframes slide {
+    0% { opacity:0; transform: translateX(10vw); }
+   20% { opacity:1; transform: translateX(4vw); }
+   80% { opacity:1; transform: translateX(-4vw); }
+  100% { opacity:0; transform: translateX(-10vw); }
 }
