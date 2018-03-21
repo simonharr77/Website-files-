@@ -8,3 +8,7 @@ function projectsScroll(){
   $(window).scrollTo("#Projects", 800, {offset : -250});
   console.log('hello');
 };
+function ContactMeScroll(){
+  $(window).scrollTo("#ContactMe", 800, {offset : -200});
+  console.log('hello');
+};

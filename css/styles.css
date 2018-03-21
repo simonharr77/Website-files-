@@ -23,27 +23,37 @@ h6{
     font-family: 'Orbitron', sans-serif;
     font-size: 30px;
 }
+h5{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+}
 .navbar-brand{
   font-family: 'Orbitron', sans-serif;
   font-size: 25px;
   color: #ccc;
 
+
 }
 
 .navbar{
   background-color: rgba(0,0,0,0.8);
-  color:black;
+}
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+
 }
 
 a:not([href]):not([tabindex]){
   font-family: 'Orbitron', sans-serif;
   font-size: 25px;
   color: #ccc;
+
 }
 
 
 .hvr-bob{
   color: #ccc;
+
 
 
 }
@@ -54,7 +64,7 @@ header{
     top: 0;
     left:0;
     width: 100%;
-      z-index: 9999;
+    z-index: 9999;
 }
 
 .responsive{
@@ -69,12 +79,21 @@ header{
 
 #AboutMe{
   margin-top: 300px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 
 }
 #pagetop{
   margin-top: 300px;
 
+}
+#Projects{
+  margin-bottom: 100px;
+}
+
+#ContactMe{
+  text-decoration-color: black;
+  color: black;
+  margin-bottom: 100px;
 }
 /*
 #backgroundContainer{
@@ -101,8 +120,10 @@ header{
 } */
 
 footer{
-  background-color: #ccc;
-  min-height: 400px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  color: #ccc;
+  
 }
 
 /* Surf Styles */
