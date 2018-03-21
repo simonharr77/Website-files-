@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <title>Simon Harringtons Portfolio</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
@@ -19,15 +19,12 @@
       <div class="responsive navbar-expand-sm">
       </div>
       <nav class="navbar navbar-expand-lg navbar-dark text-uppercase">
-        <a class="navbar-brand hvr-bob" onclick="aboutScroll()" >Simon Harrington</a>
+        <a class="navbar-brand hvr-bob" href="index.html"  >Simon Harrington</a>
         <button class="navbar-toggler navbar-toggler-right btn-outline-dark text-uppercase rounded" data-toggle="collapse" data-target="#mobileMenu">
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="mobileMenu">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link hvr-bob" href="Surf.html">Surf Report</a>
-            </li>
             <li class="nav-item">
               <a  class="nav-link hvr-bob"  onclick="projectsScroll()">Projects</a>
             </li>
@@ -46,7 +43,7 @@
       <div class="row">
       <div class="col-md-12">
       <h6> About Me </h6>
-      <hr>
+      <hr grey>
     </div>
     </div>
     <div class="row">
@@ -65,8 +62,16 @@
           <h6> Projects </h6>
           <hr>
           <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+<hr>
+
+<ul class="navbar-nav btn-text-grey ml-auto">
+          <li class="nav-item">
+            <a class="nav-link hvr-bob" href="Surf.html">Surf Report</a>
+          </li>
+        </ul>
 
       <hr>
+
       <h5> Stained glass fireworks </h5>
         </div>
         </div>
@@ -119,7 +124,7 @@
           <textarea class="form-control" id="message" rows="1" placeholder="Message" required="required"></textarea>
         </div>
         <div class="form-group">
-          <button class="btn hvr-bob btn-outline-dark bg-dark black w-100" type="submit">Send</button>
+          <button class="btn hvr-bob btn-outline-dark text-light bg-dark black w-100" type="submit">Send</button>
         </div>
       </form>
     </div>

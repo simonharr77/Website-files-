@@ -1,12 +1,12 @@
 body,html{
   height: 100%;
   width: 100%;
+
 }
 
 body{
   font-family: 'Orbitron', sans-serif;
   background-color: rgba(0,0,0,0.4);
-
   background-attachment: fixed;
   font-size: 25px;
   color: black;
@@ -29,7 +29,7 @@ h5{
 }
 .navbar-brand{
   font-family: 'Orbitron', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   color: #ccc;
 
 
@@ -45,19 +45,20 @@ h5{
 
 a:not([href]):not([tabindex]){
   font-family: 'Orbitron', sans-serif;
-  font-size: 25px;
-  color: #ccc;
+  font-size: 20px;
+    color: #ccc;
+    text-decoration-color: black;
+
+  }
 
 }
-
 
 .hvr-bob{
-  color: #ccc;
-
-
-
+  color: black;
 }
-
+a{
+  color:	#333333;
+}
 
 header{
     position: fixed;
@@ -88,12 +89,16 @@ header{
 }
 #Projects{
   margin-bottom: 100px;
+    color: black;
 }
 
 #ContactMe{
   text-decoration-color: black;
   color: black;
   margin-bottom: 100px;
+}
+#SurfReport{
+  color: black;
 }
 /*
 #backgroundContainer{
@@ -123,7 +128,7 @@ footer{
   width: 100%;
   background-color: rgba(0,0,0,0.8);
   color: #ccc;
-  
+
 }
 
 /* Surf Styles */
