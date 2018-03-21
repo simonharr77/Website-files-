@@ -50,11 +50,8 @@ a:not([href]):not([tabindex]){
     text-decoration-color: black;
 
   }
-  video{
-    margin-top: -80px;
-  }
 
-}
+
 
 .hvr-bob{
   color: black;
