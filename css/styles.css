@@ -254,3 +254,9 @@ footer{
    80% { opacity:1; transform: translateX(2vw); }
   100% { opacity:0; transform: translateX(8vw); }
 }
+
+@media (max-width: 576px) {
+ #Arrow{
+   display: none;
+ }
+}
