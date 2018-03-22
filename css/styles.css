@@ -128,30 +128,8 @@ header{
 #transmission{
 margin-top: 20px;
 
-}
-/*
-#backgroundContainer{
-  position: fixed;
-  z-index: -1;
-  top:0;
-  left:0;
 
 }
-
-#backgroundAnimation{
-  top:0;
-  left:0;
-}
-
-#foregroundContainer{
-  position: scroll;
-  z-index: 1;
-  top:0;
-  left:0;
-  margin-top: 200px;
-  margin-left: 20px;
-  margin-right: 20px;
-} */
 
 footer{
   width: 100%;
