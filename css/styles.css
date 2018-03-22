@@ -10,10 +10,10 @@ body{
   background-attachment: fixed;
   font-size: 25px;
   color: black;
+  width: 100%;
 
 }
-
-h1, h3, h4, h5{
+h1, h4,{
   font-family: 'Orbitron', sans-serif;
   font-size: 20px;
 
@@ -31,7 +31,9 @@ h6{
 }
 h5{
     font-family: 'Orbitron', sans-serif;
-    font-size: 25px;
+    font-size: 35px;
+
+
 }
 .navbar-brand{
   font-family: 'Orbitron', sans-serif;
@@ -57,7 +59,9 @@ a:not([href]):not([tabindex]){
 
   }
 
-
+.obnoxious{
+  color: black;
+}
 
 .hvr-bob{
   color: black;
@@ -104,6 +108,7 @@ header{
 #ContactMe{
   text-decoration-color: black;
   color: black;
+  margin-top: 100px;
   margin-bottom: 60px;
 }
 #SurfReport{
@@ -111,7 +116,18 @@ header{
   color: black;
 }
 #Arrow{
-  margin-top: 25px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+#surfContain{
+  margin-top: 50px;
+}
+#surfReportText{
+  margin-top: 20px;
+}
+#transmission{
+margin-top: 20px;
+
 }
 /*
 #backgroundContainer{
@@ -203,14 +219,14 @@ footer{
   height: 3vw;
   border: 1.5vw solid;
   border-color: grey transparent transparent grey;
-  transform: rotate(-45deg);
+  transform: rotate(135deg);
 }
 
 
 .arrowSliding {
   position: absolute;
-  -webkit-animation: slide 4s linear infinite;
-          animation: slide 4s linear infinite;
+  -webkit-animation: slide 3s linear infinite;
+          animation: slide 3s linear infinite;
 }
 
 .delay1 {
@@ -227,14 +243,14 @@ footer{
 }
 
 @-webkit-keyframes slide {
-    0% { opacity:0; transform: translateX(10vw); }
-   20% { opacity:1; transform: translateX(4vw); }
-   80% { opacity:1; transform: translateX(-4vw); }
-  100% { opacity:0; transform: translateX(-10vw); }
+    0% { opacity:0; transform: translateX(-8vw); }
+   20% { opacity:1; transform: translateX(-2vw); }
+   80% { opacity:1; transform: translateX(2vw); }
+  100% { opacity:0; transform: translateX(8vw); }
 }
 @keyframes slide {
-    0% { opacity:0; transform: translateX(10vw); }
-   20% { opacity:1; transform: translateX(4vw); }
-   80% { opacity:1; transform: translateX(-4vw); }
-  100% { opacity:0; transform: translateX(-10vw); }
+    0% { opacity:0; transform: translateX(-8vw); }
+   20% { opacity:1; transform: translateX(-2vw); }
+   80% { opacity:1; transform: translateX(2vw); }
+  100% { opacity:0; transform: translateX(8vw); }
 }
